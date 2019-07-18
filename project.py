@@ -1,12 +1,43 @@
 print("Welcome to the Savings Calculator. We will help you track your savings for the month!")
 earnings = input("How much money do you earn a month?")
+
+try:
+    number_var = int(earnings)
+except ValueError:  
+    print("Invalid. Please enter a number")
+    earnings = input("How much money do you earn a month?")
     
-
 food = input("How much money do you spend on food in a month?")
+try:
+    number_var = int(food)
+except ValueError:  
+    print("Invalid. Please enter a number")
+    food = input("How much money do you spend on food in a month?")    
+        
+        
+        
 clothing = input("How much money do you spend on clothing in a month?")
+try:
+    number_var = int(clothing)
+except ValueError:  
+    print("Invalid. Please enter a number")
+    clothing = input("How much money do you spend on clothing in a month?")
+    
 transportation = input("How much money do you spend on transportation in a month?")
+try:
+    number_var = int(transportation)
+except ValueError:  
+    print("Invalid. Please enter a number")
+    transportation = input("How much money do you spend on transportation in a month?")
+    
 social_activities = input("How much money do you spend on social_activities in a month?")
-
+try:
+    number_var = int(social_activities)
+except ValueError:  
+    print("Invalid. Please enter a number")
+    social_activities = input("How much money do you spend on social_activities in a month?")
+    
+    
 def operation(earnings,food,clothing,transportation,social_activities):
     remaining = int(earnings)-int(food)-int(clothing) -int(transportation) -int(social_activities)
     if remaining < 0:
@@ -23,6 +54,4 @@ operation(earnings, food, clothing, transportation, social_activities)
 
 
 
-# print(operation(earnings, food,clothing,transportation,social_activities))
 
-# operation(earnings, food,clothing,transportation,social_activities) = total 
