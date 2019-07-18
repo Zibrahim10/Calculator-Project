@@ -55,3 +55,4 @@ operation(earnings, food, clothing, transportation, social_activities)
 
 
 
+print("hi")
